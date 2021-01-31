@@ -5,6 +5,7 @@
     "description": "你瞅啥",
     "icons": {
         "16": "icon.png",
+        "32": "icon.png",
         "48": "icon.png",
         "128": "icon.png"
     },
@@ -16,6 +17,7 @@
         "default_title": "这是一个你瞅啥的插件",
         "default_popup": "popup.html"
     },
+    "homepage_url": "https://www.baidu.com",
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
@@ -25,9 +27,8 @@
         }
     ],
     "permissions": [
-        "contextMenus",
-        "tabs",
-        "notifications"
+        "notifications",
+        "contextMenus"
     ],
     "options_ui": {
         "page": "options.html",
