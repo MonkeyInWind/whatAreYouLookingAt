@@ -37,5 +37,8 @@ window.onload = () => {
             }
         }, 1000);
     }, 10000);
-
+    // document.body.onclick = (e) => {
+    //     const c = Math.random().toString(16).substr(3, 6);
+    //     e.target.style.backgroundColor = `#${c}`;
+    // }
 }
