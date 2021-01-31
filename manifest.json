@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "What are you looking at",
+    "version": "0.0.1",
+    "description": "你瞅啥",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "background": {
+        "page": "background.html"
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "这是一个你瞅啥的插件",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["js/index.js"],
+            "css": ["style.css"],
+            "run_at": "document_start"
+        }
+    ],
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "notifications"
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    }
+}
